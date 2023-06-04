@@ -1,0 +1,160 @@
+* {
+  margin-top: 0;
+  padding: 0;
+  font-family: "poppins";
+  text-transform: capitalize;
+}
+
+.main-container {
+  background-color: #eee;
+}
+
+#side-nav {
+  background-color: #f1f6f5;
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.4s;
+}
+
+.imgAdmin {
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.close-btn {
+  margin-left: 120px;
+}
+
+.hamburger {
+  width: 30px;
+  margin-top: -10px;
+}
+
+.h1 {
+  color: black;
+  text-align: center;
+  font-size: 1.1rem;
+  padding-top: 20px;
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.icon {
+  width: 30px;
+}
+
+.lineColor {
+  background: rgb(0, 0, 0);
+}
+
+.items {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar ul .active {
+  background-color: #439a97;
+  border-radius: 8px;
+}
+
+.sidebar ul li:hover {
+  background-color: #8ec3b0;
+  border-radius: 8px;
+}
+
+.sidebar ul li a:hover {
+  color: #fff !important;
+}
+
+.sidebar ul li,
+.sidebar ul .active a:hover {
+  color: #fff;
+}
+
+.mainContent {
+  position: relative;
+}
+
+.title {
+  background-color: #439a97;
+  height: 150px;
+}
+
+.titleContent {
+  padding: 20px 0 0 10px;
+  margin-left: 40px;
+  text-shadow: 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.info {
+  max-width: 95%;
+}
+
+.notification {
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 20px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  margin-top: -50px;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.notification h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.notification img {
+  width: 100px;
+  height: 80px;
+}
+
+@media (max-width: 769px) {
+  #side-nav {
+    margin-left: -250px;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 2;
+  }
+
+  .btnVisible {
+    display: none !important;
+    transition: all 0.4s;
+  }
+
+  #side-nav.active {
+    margin-left: 0 !important;
+  }
+
+  .navbar {
+    background-color: #439a97;
+  }
+
+  .info {
+    max-height: 100%;
+    max-width: 80%;
+    margin-top: -50px;
+  }
+
+  .title {
+    height: 100px;
+  }
+
+  .notification {
+    position: static;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
